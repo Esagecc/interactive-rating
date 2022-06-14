@@ -35,6 +35,9 @@ body {
     border-radius: 20px;
 }
 
+.content {
+    display: none;
+}
 .circle {
     background-color: var(--dk-gray);
     border-radius: 50%;
@@ -98,7 +101,26 @@ ul li:active {
     color: var(--orange);
 }
 
+.content-two {
+    text-align: center;
+    padding-top: 1.5rem;
+}
 
+.vote {
+    padding-bottom: 1rem;
+}
+
+.rating {
+    background-color: var(--dk-gray);
+    padding: .5rem;
+    font-size: 15px;
+    border-radius: 30px;
+    font-weight: 400;
+    color: var(--orange);
+    width: 65%;
+    display: block;
+    margin: 0 auto;
+}
 
 .attribution { 
     font-size: 11px; 
