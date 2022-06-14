@@ -69,6 +69,15 @@ ul li {
     margin-bottom: 1.5rem;
 }
 
+ul li:hover {
+    cursor: pointer;
+    background-color: var(--md-gray);
+}
+
+ul li:active {
+    background-color: var(--orange);
+}
+
 .button {
     background-color: var(--orange);
     border: none;
@@ -81,9 +90,15 @@ ul li {
     letter-spacing: 3px;
     display: block;
     margin: 0 auto;
-    
-
 }
+
+.button:hover {
+    cursor: pointer;
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+
 
 .attribution { 
     font-size: 11px; 
