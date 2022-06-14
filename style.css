@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,700;1,400&display=swap');
 
 * {
     box-sizing: border-box;
@@ -12,10 +12,77 @@
     --white: hsl(0, 0%, 100%);
     --lgt-gray: hsl(217, 12%, 63%);
     --md-gray: hsl(216, 12%, 54%);
+    --dk-gray: rgb(50, 54, 58);
     --dk-blue:  hsl(213, 19%, 18%);
     --dkr-blue: hsl(216, 12%, 8%);
 }
 
 
-.attribution { font-size: 11px; text-align: center; }
+body {
+    background-color: var(--dkr-blue);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main {
+    width: 90%;
+    padding: 1.5rem;
+    background-color: var(--dk-blue);
+    border-radius: 20px;
+    display: flex;
+}
+
+.circle {
+    background-color: var(--dk-gray);
+    border-radius: 50%;
+    padding: 12px;
+    height: 42px;
+    width: 42px;
+    text-align: center;
+}
+
+h1 {
+    padding: 20px 0;
+    font-weight: 700;
+}
+
+.text {
+    color: var(--lgt-gray);
+    font-size: 15px;
+    font-weight: 400;
+    padding-bottom: 1.5rem;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li {
+    list-style-type: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--lgt-gray);
+    margin-bottom: 1.5rem;
+}
+
+.button {
+    background-color: var(--orange);
+    border: none;
+    border-radius: 20px;
+    width: 80%;
+    color: var(--white);
+    padding: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    justify-content: center;
+}
+
+.attribution { font-size: 11px; 
+    text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
