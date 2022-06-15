@@ -31,3 +31,4 @@ button.addEventListener('click', function (event) {
     selectedRatingSpan.innerHTML = selectedRatingValue;
     cardThankYou.classList.remove('hidden');
 });
+
