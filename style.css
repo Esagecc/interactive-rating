@@ -28,6 +28,16 @@ body {
     height: 100vh;
 }
 
+
+.star {
+    background-color: var(--dk-gray);
+    border-radius: 50%;
+    padding: 12px;
+    height: 42px;
+    width: 42px;
+    text-align: center;
+
+}
 .main {
     width: 90%;
     padding: 1.5rem;
@@ -35,50 +45,46 @@ body {
     border-radius: 20px;
 }
 
-.content {
-    display: none;
-}
-.circle {
-    background-color: var(--dk-gray);
-    border-radius: 50%;
-    padding: 12px;
-    height: 42px;
-    width: 42px;
-    text-align: center;
-}
-
 h1 {
     padding: 20px 0;
     font-weight: 700;
 }
 
-.text {
+.text ,.selected-rating-wrapper {
     color: var(--lgt-gray);
     font-size: 15px;
     font-weight: 500;
     padding-bottom: 1.5rem;
 }
 
-ul {
+.ratings-wrapper  {
     display: flex;
     justify-content: space-between;
 }
 
-ul li {
-    list-style-type: none;
+.rating {
     font-size: 15px;
+    background-color: var(--dk-gray);
+    border-radius: 50%;
+    padding: 12px;
+    height: 42px;
+    width: 42px;
+    text-align: center;
     font-weight: 500;
     color: var(--lgt-gray);
     margin-bottom: 1.5rem;
+    transition: all .3s ease-in-out;
 }
 
-ul li:hover {
+.ratings-wrapper .rating:hover {
     cursor: pointer;
-    background-color: var(--md-gray);
+    background-color: var(--lgt-gray);
+    color: var(--white);
 }
 
-ul li:active {
-    background-color: var(--orange);
+.ratings-wrapper .rating.selected {
+    color: var(--white);
+    background-color: var(--lgt-gray);
 }
 
 .button {
@@ -93,6 +99,7 @@ ul li:active {
     letter-spacing: 3px;
     display: block;
     margin: 0 auto;
+    transition: all .3s ease-in-out;
 }
 
 .button:hover {
@@ -106,11 +113,15 @@ ul li:active {
     padding-top: 1.5rem;
 }
 
+.hidden {
+    display:none;
+}
+
 .vote {
     padding-bottom: 1rem;
 }
 
-.rating {
+.ratings {
     background-color: var(--dk-gray);
     padding: .5rem;
     font-size: 15px;
